@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  type: ss
-  server: 188.132.174.236
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
   server: shop.neexbyte.ir
   port: 8443
@@ -31,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES
