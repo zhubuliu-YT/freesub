@@ -5,16 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 188.114.97.6
-  port: 2086
+  server: 104.25.217.189
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 7a657573-627d-c5d7-4e7b-9e260f5cfff1
+  tls: true
+  servername: imzajnekupas.a3-60-morteza.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: ios
   network: ws
   ws-opts:
-    path: /
+    path: /stream/PANEL_ZEUS/9e260f5cfff1/loc-0
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: imzajnekupas.a3-60-morteza.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
