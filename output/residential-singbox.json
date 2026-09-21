@@ -14,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -24,89 +24,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe",
-      "server": "80.240.18.227",
-      "server_port": 10051,
-      "uuid": "73996ef7-544c-45e7-abc0-973218c727e2",
-      "tls": {
-        "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-      "server": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
-      "server": "sczznmbbbzgwlwzdhsql.jiedddym.com",
-      "server_port": 43142,
-      "uuid": "17ab31f7-c021-4aec-83b2-ab48de8886bd",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HGk0MQ7l4mWgJo1-7PctGx5pf88HECBpLRUtBSemkzY",
-          "short_id": "b93f2026953855c5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe",
-      "server": "sczznmbbbzgwlwzdhsql.jiedddym.com",
-      "server_port": 62638,
-      "uuid": "17ab31f7-c021-4aec-83b2-ab48de8886bd",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PhXLfJ4s8EPauWaeRpzAjSuZibhmMiZFEMr8h8qU6iI",
-          "short_id": "d1f38c0f15ed22"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
       "server": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -114,6 +33,25 @@
       "tls": {
         "enabled": true,
         "server_name": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+      "server": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn",
         "insecure": false
       },
       "transport": {
@@ -126,11 +64,8 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
       ]
     },
     {
@@ -138,11 +73,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
