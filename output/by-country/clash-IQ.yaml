@@ -13,11 +13,10 @@ proxies:
   tls: true
   servername: hub-de-03.hanvpn.cc
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /de03-ws-8e47a
-    headers:
-      Host: hub-de-03.hanvpn.cc
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: de03-grpc-8e47a
 proxy-groups:
 - name: PROXIES
   type: select
