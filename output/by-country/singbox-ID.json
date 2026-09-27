@@ -5,14 +5,21 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe",
-      "server": "103.97.91.17",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "104.18.32.87",
       "server_port": 443,
-      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "tls": {
         "enabled": true,
-        "server_name": "la.freeguard.org",
+        "server_name": "id1.nathaya.web.id",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/trojan#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        }
       }
     },
     {
@@ -20,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
