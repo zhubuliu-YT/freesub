@@ -39,17 +39,19 @@ proxies:
   servername: china.letsconnectpoint.com
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 45.12.75.242
-  port: 26424
+  server: germany.tofreedom.ru
+  port: 8444
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
   tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
+  servername: germany.tofreedom.ru
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /c7f5317cd04691bc
+    headers:
+      Host: germany.tofreedom.ru
 proxy-groups:
 - name: PROXIES
   type: select
