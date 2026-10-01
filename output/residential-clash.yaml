@@ -5,31 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 167.82.76.7
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSs---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  server: 178.83.46.216
-  port: 2053
+  server: 162.159.0.53
+  port: 80
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  server: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
-  port: 443
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  server: 172.64.229.170
+  port: 2082
   udp: true
-  type: hysteria2
-  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
-  sni: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -40,6 +37,17 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  server: hi.northcluster.info
+  port: 52300
+  udp: true
+  type: vmess
+  uuid: 6e571484-4166-4699-8f58-b34a1823691f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /video
 - name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
   server: s3.huhiuh.space
   port: 18642
@@ -54,8 +62,8 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
 - name: AUTO
@@ -64,8 +72,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
 rules:
