@@ -14,9 +14,9 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
+  server: 178.83.46.216
   port: 2053
   udp: true
   type: vless
