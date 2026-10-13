@@ -4,12 +4,11 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 01 - xiaohe",
-      "server": "91.201.65.122",
-      "server_port": 9092,
-      "method": "aes-256-cfb",
-      "password": "TyNkGmp9hs6eGpDK"
+      "server": "204.216.216.23",
+      "server_port": 10086,
+      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
     },
     {
       "type": "shadowsocks",
@@ -20,11 +19,72 @@
       "password": "itzvpn@321"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+      "server": "91.201.65.122",
+      "server_port": 9065,
+      "method": "aes-256-cfb",
+      "password": "PeHSHm5SqEjBuEXE"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 04 - xiaohe",
+      "server": "91.201.65.122",
+      "server_port": 9002,
+      "method": "aes-256-cfb",
+      "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
+      "server": "91.201.65.122",
+      "server_port": 9074,
+      "method": "aes-256-cfb",
+      "password": "p5wSkb2uM3pKSS3j"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 06 - xiaohe",
+      "server": "116.204.164.5",
+      "server_port": 7443,
+      "uuid": "2416ff70-cb17-4cdc-834d-a89c00261e01",
+      "tls": {
+        "enabled": true,
+        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 07 - xiaohe",
+      "server": "82.118.16.187",
+      "server_port": 443,
+      "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU",
+          "short_id": "cd6065902eea7a02"
+        }
+      }
     },
     {
       "type": "selector",
@@ -33,7 +93,11 @@
         "auto",
         "🇮🇹 意大利 (Italy) 01 - xiaohe",
         "🇮🇹 意大利 (Italy) 02 - xiaohe",
-        "🇮🇹 意大利 (Italy) 03 - xiaohe"
+        "🇮🇹 意大利 (Italy) 03 - xiaohe",
+        "🇮🇹 意大利 (Italy) 04 - xiaohe",
+        "🇮🇹 意大利 (Italy) 05 - xiaohe",
+        "🇮🇹 意大利 (Italy) 06 - xiaohe",
+        "🇮🇹 意大利 (Italy) 07 - xiaohe"
       ]
     },
     {
@@ -42,7 +106,11 @@
       "outbounds": [
         "🇮🇹 意大利 (Italy) 01 - xiaohe",
         "🇮🇹 意大利 (Italy) 02 - xiaohe",
-        "🇮🇹 意大利 (Italy) 03 - xiaohe"
+        "🇮🇹 意大利 (Italy) 03 - xiaohe",
+        "🇮🇹 意大利 (Italy) 04 - xiaohe",
+        "🇮🇹 意大利 (Italy) 05 - xiaohe",
+        "🇮🇹 意大利 (Italy) 06 - xiaohe",
+        "🇮🇹 意大利 (Italy) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
